@@ -239,33 +239,55 @@ section {
     object-fit: cover; /* Ensures images maintain aspect ratio while filling the space */
     border-radius: 0.5em;
 }
-form{
+
+form {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 2em;
-
 }
-form .input-box{
-    display:flex;
+
+form .input-box {
+    display: flex;
     flex-direction: column;
     align-items: baseline;
-    gap:2em;
+    gap: 1em;
 }
-.input-box span{
+
+.input-box span {
     font-size: 1.5em;
 }
-form input{
+
+form input, form textarea {
     font-size: 1.3em;
     padding: 1em 5em;
-    border-radius:0.5;
-    border:none;
+    border-radius: 0.5em;
+    border: none;
     outline: none;
-
+    background: transparent;
+    color: white;
+    border: 2px solid rgb(147, 59, 147);
 }
-form input:focus{
-    background:rgb(147, 59, 147);
+
+form input:focus, form textarea:focus {
+    background: rgb(147, 59, 147);
+    color: white;
+}
+
+button {
+    font-size: 1.3em;
+    padding: 0.8em 2em;
+    border-radius: 0.5em;
+    border: none;
+    background: rgb(147, 59, 147);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: rgb(100, 30, 100);
 }
 footer{
     background-color:#12051cb3;
