@@ -141,22 +141,23 @@
   <section id="Contact">
     <h1 class="header"><span>Contact</span></h1>
     <form action="https://formsubmit.co/kawtarbouzhar@gmail.com" method="POST">
-      <div class="input-box">
-        <span>Full name</span>
-        <input type="text" placeholder="Enter Your Full Name">
-      </div>
-
-      <div class="input-box">
-        <span>Your Email</span>
-        <input type="text" placeholder="Enter Your Email">
-      </div>
-
-      <div class="input-box">
-        <span>Your Message</span>
-        <input type="text" placeholder="Enter Your Message">
-      </div>
-      <div class="btn">Submit</div>
-    </form>
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
+  
+  <div class="input-box">
+    <input type="text" name="name" required placeholder="Full Name">
+  </div>
+  
+  <div class="input-box">
+    <input type="email" name="email" required placeholder="Your Email">
+  </div>
+  
+  <div class="input-box">
+    <textarea name="message" required placeholder="Message"></textarea>
+  </div>
+  
+  <button type="submit">Send</button>
+</form>
   </section>
 
 
